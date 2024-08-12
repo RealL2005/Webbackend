@@ -4,7 +4,6 @@ import * as validate from '@midwayjs/validate';
 import * as info from '@midwayjs/info';
 import * as ws from '@midwayjs/ws';
 import * as orm from '@midwayjs/orm';
-import * as swagger from '@midwayjs/swagger';
 import { join } from 'path';
 import * as crossDomain from '@midwayjs/cross-domain';
 // import { DefaultErrorFilter } from './filter/default.filter';
@@ -22,7 +21,6 @@ import { ReportMiddleware } from './middleware/report.middleware';
       enabledEnvironment: ['local'],
     },
     orm,
-    swagger
   ],
   importConfigs: [join(__dirname, './config')],
 })
